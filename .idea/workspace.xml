@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9936b2e-33a3-4844-a9d4-a86389107015" name="Default Changelist" comment="" />
+    <list default="true" id="a9936b2e-33a3-4844-a9d4-a86389107015" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/infra/tabelas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/atendimentos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/atendimentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/atendimentos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1okntWcuQXdyT2izimhem70JgWY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,6 +25,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.2.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="11.15.47" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -34,16 +46,37 @@
       <updated>1613839670788</updated>
       <workItem from="1613839671842" duration="927000" />
       <workItem from="1613873481243" duration="3409000" />
+      <workItem from="1613914217482" duration="7048000" />
     </task>
+    <task id="LOCAL-00001" summary="apagando node modules.">
+      <created>1613877826915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613877826915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="apagando node modules." />
+    <option name="LAST_COMMIT_MESSAGE" value="apagando node modules." />
   </component>
   <component name="WindowStateProjectService">
     <state x="1027" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613874064288">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1027" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1613874064288" />
+    <state x="879" y="88" key="CommitChangelistDialog2" timestamp="1613877821797">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="879" y="88" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1613877821797" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613877829559">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1613877829559" />
   </component>
 </project>
