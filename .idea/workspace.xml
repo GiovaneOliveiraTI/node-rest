@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9936b2e-33a3-4844-a9d4-a86389107015" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/atendimentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/atendimentos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/atendimentos.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/atendimentos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +46,9 @@
       <workItem from="1613993782335" duration="47000" />
       <workItem from="1614044409022" duration="4167000" />
       <workItem from="1614082003209" duration="33000" />
-      <workItem from="1614126918665" duration="1608000" />
+      <workItem from="1614126918665" duration="2268000" />
+      <workItem from="1614165395453" duration="252000" />
+      <workItem from="1614177275079" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="apagando node modules.">
       <created>1613877826915</created>
@@ -92,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614048490590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="criando endpoint para deletar atendimentos e melhorando resultados.">
+      <created>1614128593587</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614128593587</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,25 +112,30 @@
     <MESSAGE value="Validandos dados." />
     <MESSAGE value="fazendo buscar todos e buscar por Id." />
     <MESSAGE value="criando endpoint de update" />
-    <option name="LAST_COMMIT_MESSAGE" value="criando endpoint de update" />
+    <MESSAGE value="criando endpoint para deletar atendimentos e melhorando resultados." />
+    <option name="LAST_COMMIT_MESSAGE" value="criando endpoint para deletar atendimentos e melhorando resultados." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614165616608">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="734" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1614165616608" />
     <state x="1027" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613874064288">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1027" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1613874064288" />
-    <state x="879" y="88" key="CommitChangelistDialog2" timestamp="1614048488092">
+    <state x="879" y="88" key="CommitChangelistDialog2" timestamp="1614128591062">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="879" y="88" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1614048488092" />
-    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1613993808097">
+    <state x="879" y="88" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1614128591062" />
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1614165645233">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1613993808097" />
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614048492888">
+    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1614165645233" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614128595410">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1614048492888" />
+    <state x="872" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1614128595410" />
     <state x="1097" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614048459423">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
