@@ -4,26 +4,45 @@ const axios = require('axios')
 const repositories = require('../repositories/atendimentos')
 
 class Atendimento {
-    adiciona(atendimento) {
-        const datacriacao = moment().format('YYYY-MM-DD HH:MM:SS')
-        const data = moment(atendimento.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS')
-        const dataEhValida = moment(data).isSameOrAfter(datacriacao)
-        const clienteEhValido = atendimento.cliente.length >= 5
 
-        const validacoes = [
+    constructor() {
+
+         this.dataEhValida = (data, datacriacao) => moment(data).isSameOrAfter(datacriacao)
+        this.clienteEhValido = (tamanho) => tamanho >= 5
+        this.valida = parametros => this.validacoes.filter(campo
+        => {
+            const {nome} = campo
+            const parametro = parametros[nome]
+
+            return !campo.valido(parametro)
+        })
+
+
+
+        this.validacoes = [
             {
                 nome: 'data',
-                valido: dataEhValida,
+                valido: this.dataEhValida,
                 mensagem: 'Data deve ser maior ou igual a atual'
             },
             {
                 nome: 'cliente',
-                valido: clienteEhValido,
+                valido: this.clienteEhValido,
                 mensagem: 'Cliente deve ter pelo menos cinco carcteres.'
             }
         ]
 
-        const erros = validacoes.filter(campo => !campo.valido)
+    }
+
+    adiciona(atendimento) {
+        const datacriacao = moment().format('YYYY-MM-DD HH:MM:SS')
+        const data = moment(atendimento.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS')
+
+        const parametros = {
+            data: {data, datacriacao},
+            cliente: { tamanho: atendimento.cliente.length}
+        }
+        const erros = this.valida(parametros)
         const existemErros = erros.length
 
 
@@ -40,16 +59,8 @@ class Atendimento {
         }
     }
 
-    listaAtendimentos(res) {
-        const sql = 'SELECT * FROM Atendimentos'
-
-        conexao.query(sql, (erro, resultados) => {
-            if (erro) {
-                res.status(400).json(erro)
-            } else {
-                res.status(200).json(resultados)
-            }
-        })
+    lista() {
+        return repositories.lista()
     }
 
     buscaPorId(id, res) {
