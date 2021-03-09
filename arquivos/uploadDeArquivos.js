@@ -1,6 +1,26 @@
 const { on } = require('events')
-const fs = require ('fs')
+const fs = require('fs')
+const path = require('path')
 
-fs.createReadStream('./assets/dartvader.jpg' )
-.pipe(fs.createWriteStream('./assets/dart-Stream.jpg'))
-.on('finish', () => console.log('Imagem foi escrita com sucess..'))
+module.exports = (caminho, nomeDoArquivo, callbackImagemCriada) => {
+
+    const tiposValidos = ['jpg', 'jpeg', 'png']
+    const tipo = path.extname(caminho)
+    const tipoEhValido = tiposValidos.indexOf(tipo.substring(1)) !== -1
+
+
+    if (tipoEhValido) {    
+        const novoCaminho = `./assets/imagens/${nomeDoArquivo}${tipo}`
+
+        fs.createReadStream(caminho)
+            .pipe(fs.createWriteStream(novoCaminho))
+            .on('finish', () => callbackImagemCriada(false, novoCaminho))
+    } else {
+        const erro ="Tipo é Inválido!"
+        console.log('Erro! Tipo inválido')
+        callbackImagemCriada(erro)
+    }
+
+}
+
+
